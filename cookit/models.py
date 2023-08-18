@@ -22,4 +22,4 @@ class RecipeInstruction(models.Model):
 class RecipeNutrition(models.Model):
     recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE)
     nutrient = models.CharField(max_length=100, null=False)
-    quantity = models.CharField(max_length=100)
+    quantity = models.CharField(max_length=100, null=False)
